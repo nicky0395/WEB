@@ -8,7 +8,7 @@
 	$nombre = $_POST["Nombre"];
 	$apellido = $_POST["Apellido"];
 	$FechaNacimiento = $_POST["FechaNacimiento"];
-    $FechaResgistro = $_POST["FechaPago"];
+    $FechaResgistro = $_POST["FechaRegistro"];
     $Contrasena = $_POST["Contrasena"];
 
 	// Create connection
