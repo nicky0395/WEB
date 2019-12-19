@@ -19,50 +19,17 @@
 
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>PROYECTO SEGUNDO PARCIAL</title>
-        <meta charset ="UTF-8">
-        <meta name="viewport" content="width=device-width, inicial-scale=1">
 
-        <link href="../css/style.css" rel="stylesheet" type="text/css">
+<head>
+    <title>PROYECTO SEGUNDO PARCIAL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
 
-    </head>
-    <body>
-        <header class="header">
-            <div class="container logo-nav-container">
-                <a href="#" class="logo">
-                    <img src="../img/logo.png" width="200px">
-                </a>
-                <nav class="navegation">
-                    <ul class="menu">
-                        <li><a href="../index.html">INICIO</a></li>
-                        <li><a href="quienessomos.html">QUIÉNES SOMOS?</a></li>
-                        <li><a href="">SERVICIOS</a>
-                            <ul class="submenu">
-                                <li><a href="servicioProfesores.html">Profesores</a></li>
-                                <li><a href="servicioAlumno.html">Alumnos</a></li>
-                                <li><a href="">Módulos</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contactos.html">CONTÁCTENOS</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 
-        <main class="main">
-            <div class="container">
-                <div class="contacto">
-                    <div class="imagenContacto">
-                        <img src="../img/login.png" width="100%">
-                    </div>
-                    <div class="cajaLogin">
-                        <div class="titulo">
-                            <h1>
-                                LOGIN
-                            </h1>
-                        </div>
+</head>
 
+<<<<<<< HEAD:php/servicioModulos.php
                         <form class="formularioLogin" action="servicioModulos.php" method="POST">
                             USUARIO: 
                             <input type="text" name="nombre">
@@ -73,19 +40,67 @@
                             <br>
                             <input type="submit" value="LOGIN" name="loginM">
                         </form>
+=======
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="#" class="logo">
+                <img src="../img/logo.png" width="200px">
+            </a>
+            <nav class="navegation">
+                <ul class="menu">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="quienessomos.html">QUIÉNES SOMOS?</a></li>
+                    <li><a href="">SERVICIOS</a>
+                        <ul class="submenu">
+                            <li><a href="servicioProfesores.html">Profesores</a></li>
+                            <li><a href="servicioAlumno.html">Alumnos</a></li>
+                            <li><a href="">Módulos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactos.html">CONTÁCTENOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="contacto">
+                <div class="imagenContacto">
+                    <img src="../img/login.png" width="100%">
+                </div>
+                <div class="cajaLogin">
+                    <div class="titulo">
+                        <h1>
+                            LOGIN
+                        </h1>
+>>>>>>> 218628683618c0d36fee7a2cac10080239481f83:html/servicioModulos.html
                     </div>
 
+                    <form class="formularioLogin" action="/html/insercionModulo.html" method="POST">
+                        USUARIO:
+                        <input type="text" name="nombre">
+                        <br> CONTRASEÑA:
+                        <input type="password" name="contraseña">
+                        <br>
+                        <br>
+                        <input type="submit" value="LOGIN">
+                    </form>
                 </div>
+
             </div>
-        </main>
+        </div>
+    </main>
 
 
-        <footer class="footer">
-            <div class="container">
-                <p>Página diseñada por: @Bryan Tualle</p>
-            </div>
+    <footer class="footer">
+        <div class="container">
+            <p>Página diseñada por: @Bryan Tualle</p>
+        </div>
 
-        </footer>
+    </footer>
 
-    </body>
+</body>
+
 </html>
