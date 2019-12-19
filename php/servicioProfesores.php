@@ -1,3 +1,20 @@
+<?php
+  if (isset($_POST['loginP'])) {
+    $conexion = mysqli_connect("localhost","root","","dbproyecto") or die("Problemas con la conexion");
+    $valid_Student=mysqli_query($conexion,"SELECT * FROM profesor WHERE usuarioProfesor='$_REQUEST[nombre]' AND contraseniaProfesor='$_REQUEST[contraseña]'");
+    $reg_stud = mysqli_fetch_array($valid_Student);
+    if($reg_stud['usuarioProfesor']){
+        echo "
+        <script>
+            alert('INGRESO CORRECTO')
+            window.location='../index.html';
+        </script>";
+    }else {
+      die("<script>alert('Usuario o Contraseña incorrectos'); window.location='../php/servicioProfesores.php';</script>");
+    }
+    mysqli_close($conexion);
+  }
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -44,7 +61,7 @@
                             </h1>
                         </div>
 
-                        <form class="formularioLogin" action="" method="POST">
+                        <form class="formularioLogin" action="servicioProfesores.php" method="POST">
                             USUARIO: 
                             <input type="text" name="nombre">
                             <br>
@@ -52,7 +69,7 @@
                             <input type="password" name="contraseña">
                             <br>
                             <br>
-                            <input type="submit" value="LOGIN">
+                            <input type="submit" value="LOGIN" name="loginP" >
                         </form>
                     </div>
 
