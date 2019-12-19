@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>PROYECTO SEGUNDO PARCIAL</title>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1">
+
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="#" class="logo">
+                    <img src="../img/logo.png" width="200px">
+                </a>
+                <nav class="navegation">
+                    <ul class="menu">
+                        <li><a href="../index.html">INICIO</a></li>
+                        <li><a href="quienessomos.html">QUIÉNES SOMOS?</a></li>
+                        <li><a href="">SERVICIOS</a>
+                            <ul class="submenu">
+                                <li><a href="servicioProfesores.html">Profesores</a></li>
+                                <li><a href="servicioAlumno.html">Alumnos</a></li>
+                                <li><a href="servicioModulos.html">Módulos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CONTÁCTENOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="contacto">
+                    <div class="imagenContacto">
+                        <img src="../img/contacto.png" width="100%">
+                    </div>
+                    <div class="cajaContactos">
+                        <div class="titulo">
+                            <h1>
+                                ESCRÍBENOS
+                            </h1>
+                        </div>
+
+                        <form class="formularioContacto" action="../php/archivoContactos.php" method="POST">
+                            Nombre: 
+                            <input type="text" name="nombre">
+                            <br>
+                            Email: 
+                            <input type="text" name="email">
+                            <br>
+                            Asunto: 
+                            <input type="text" name="asunto">
+                            <br>
+                            Mensaje:
+                            <br>
+                            <textarea name="mensaje" rows="10" cols="40">
+                            </textarea>
+                            <br>
+                            <input type="submit" value="Registrar">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <p>Página diseñada por: @Bryan Tualle</p>
+            </div>
+
+        </footer>
+
+    </body>
+</html>
