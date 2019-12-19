@@ -7,8 +7,8 @@
     if($_REQUEST['nombre']=="admin" && $_REQUEST['contraseña']=="admin"){
         echo "
         <script>
-            alert('INGRESO CORRECTO');
-            window.location='../index.html';
+            //alert('INGRESO CORRECTO');
+            window.location='../html/insercionModulo.html';
         </script>";
     }else {
       die("<script>alert('Usuario o Contraseña incorrectos'); window.location='../php/servicioModulos.php';</script>");
