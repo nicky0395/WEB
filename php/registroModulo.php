@@ -24,9 +24,9 @@
             $conexion = mysqli_connect("localhost","root","","dbexamen") or
             die("Problemas con la conexion");
 
-            mysqli_query($conexion, "insert into estudiantes(nrc,cedula,nombre,apellido,edad,genero) 
-            values ($_REQUEST[nrc],$_REQUEST[cedula],'$_REQUEST[nombre]','$_REQUEST[apellido]', $_REQUEST[edad], '$_REQUEST[genero]')") or
-            die("Problemas en el SELECT" .mysqli_error($conexion));
+            mysqli_query($conexion, "insert into modulo(`NOMBRE_MODULO`, `DESCRIPCION`, `VISIBLE_M`) 
+            values ($_REQUEST[idModulo],$_REQUEST[descripcion]") or
+            die("Problemas en el insert" .mysqli_error($conexion));
 
             mysqli_close($conexion);
 
