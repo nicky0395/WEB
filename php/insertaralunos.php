@@ -33,6 +33,6 @@
 	    echo "Error: " . $sql . "<br>" . $conn->error;
 	}
 	echo"<br />"; 
-        echo"<a href='index1.html'> Regresar Menú Principal </a>";
+        echo"<a href='../index.html'> Regresar Menú Principal </a>";
 	$conn->close();
 ?>
