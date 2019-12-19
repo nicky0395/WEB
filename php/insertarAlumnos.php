@@ -17,12 +17,6 @@
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	} 
-	echo strtotime($FechaNacimiento);
-	?><br><?php
-	echo $FechaNacimiento;
-	?><br><?php
-
-	
 
 	$sql = "INSERT INTO alumno (N_EXPEDIENTE, NOMBRE_ALUMNO, APELLIDO_ALUMNO, CLAVE_ALUMNO, FECHA_NACIMIENTO, FECHA_REGISTRO)
 	VALUES (".$nexpediente.",'".$nombre."','".$apellido."','".$Contrasena."','".$FechaNacimiento."','".$FechaResgistro."')";
