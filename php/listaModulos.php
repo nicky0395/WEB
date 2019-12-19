@@ -31,12 +31,12 @@
   if ($mysql->connect_error)
     die("Problemas con la conexion a la base de datos");
 
-  $registros = $mysql->query("select COD_MODELO as cod,
+  $registros = $mysql->query("select COD_MODULO as cod,
                                      ID_PROFESOR as profesor,
                                      NOMBRE_MODULO as nombre,
                                      DESCRIPCION as descrip 
                                      from MODULO
-                                    WHEN VISIBLE_M = '1'") or
+                                    WHERE VISIBLE_M = 1 ") or
     die($mysql->error);
 
   echo '<table class="tablalistado">';

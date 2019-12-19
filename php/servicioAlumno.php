@@ -7,7 +7,7 @@ if (isset($_POST['loginE'])) {
         echo "
         <script>
             alert('INGRESO CORRECTO')
-            window.location='../index.html';
+            window.location='listaModulos.php';
         </script>";
     } else {
         die("<script>alert('Usuario o Contraseña incorrectos'); window.location='../php/servicioAlumno.php';</script>");
