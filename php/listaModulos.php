@@ -27,37 +27,34 @@
 	if ($mysql->connect_error)
 	  die("Problemas con la conexi�n a la base de datos");
   
-    $registros=$mysql->query("select     cod_modulo as cod,
-                                          id_profesor as profesor,
-                                          nombre_modulo as nombre,
-                                          descripcion 
+    $registros=$mysql->query("select     COD_MODELO as cod,
+                                          ID_PROFESOR as profesor,
+                                          NOMBRE_MODULO as nombre,
+                                          DESCRIPCION as desc 
                                       from modulo
-                                      WHEN ") or
+                                      WHEN VISIBLE_M") or
       die($mysql->error);
 	 
     echo '<table class="tablalistado">';
-    echo '<tr><th>Codigo</th><th>Descripcion</th><th>Precio</th><th>Rubro</th><th>Borrar</th><th>Modificar</th></tr>';
+    echo '<tr><th>Codigo</th><th>Profesor</th><th>Nombre</th><th>Matricularse</th></tr>';
     while ($reg=$registros->fetch_array())
     {
       echo '<tr>';
       echo '<td>';
-      echo $reg['codigoart'];
+      echo $reg['cod'];
       echo '</td>';	  
       echo '<td>';
-      echo $reg['descripcionart'];	  
+      echo $reg['profesor'];	  
       echo '</td>';	  
       echo '<td>';
-      echo $reg['precio'];	  
+      echo $reg['nombre'];	  
       echo '</td>';	  
       echo '<td>';
-      echo $reg['descripcionrub'];	  
+      echo $reg['desc'];	  
       echo '</td>';
       echo '<td>';
-      echo '<a href="bajaarticulo.php?codigo='.$reg['codigoart'].'">Borra?</a>';
-      echo '</td>';
-      echo '<td>';
-      echo '<a href="modificacionarticulo1.php?codigo='.$reg['codigoart'].'">Modifica?</a>';
-      echo '</td>';      
+      echo '<a href="matricularse.php?codigo='.$reg['cod'].'">Matricular?</a>';
+      echo '</td>';    
       echo '</tr>';	  
     }	
     echo '<tr><td colspan="6">';
