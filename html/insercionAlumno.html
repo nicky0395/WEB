@@ -16,17 +16,16 @@
 
     <h1 class="h1_class">Ingrese los siguientes datos</h1>
     <form method="post" action="../php/insertarAlumnos.php" id="form_padd">
-        <input type="text" name="Nombre" placeholder="Ingrese Nombre" size="40" class="estiloInput">
+        <input type="text" name="Nombre" placeholder="Ingrese Nombre" size="40" class="estiloInput" required>
+
         <br /> <br />
-        <input type="text" name="Apellido" placeholder="Ingrese Apellido" size="40" class="estiloInput">
+        <input type="text" name="Apellido" placeholder="Ingrese Apellido" size="40" class="estiloInput" required>
+        <br /> <br /> Ingrese la de fecha de Nacimiento
+        <input type="date" name="FechaNacimiento" placeholder="Ingrese fecha de nacimiento" size="40" class="estiloInput" required>
+        <br /> <br /> Ingrese la de fecha de Registro
+        <input type="date" name="FechaRegistro" placeholder="Fecha de Registro" size="40" class="estiloInput" required>
         <br /> <br />
-        Ingrese la de fecha de Nacimiento
-        <input type="date" name="FechaNacimiento" placeholder="Ingrese fecha de nacimiento" size="40" class="estiloInput">
-        <br /> <br />
-        Ingrese la de fecha de Registro
-        <input type="date" name="FechaRegistro" placeholder="Fecha de Registro" size="40" class="estiloInput">
-        <br /> <br />
-        <input type="password" name="Contrasena" placeholder="Ingrese stock" size="40" class="estiloInput">
+        <input type="password" name="Contrasena" placeholder="Ingrese stock" size="40" class="estiloInput" required>
         <br /> <br />
         <input type="submit" name="boton" value="Insertar" size="40" class="estiloInput">
     </form>
