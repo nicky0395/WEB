@@ -27,6 +27,7 @@
 <body>
 
   <?php
+  $nombre = $_GET["nombre"];
   $mysql = new mysqli("localhost", "root", "", "instituto");
   if ($mysql->connect_error)
     die("Problemas con la conexion a la base de datos");
@@ -56,7 +57,7 @@
     echo $reg['descrip'];
     echo '</td>';
     echo '<td>';
-    echo '<a href="matricularse.php?codigo=' . $reg['cod'] . '">Matricular?</a>';
+    echo '<a href="matricularse.php?codigo=' . $reg['cod'] . '&codigo=' . $nombre . '">Matricular?</a>';
     echo '</td>';
     echo '</tr>';
   }

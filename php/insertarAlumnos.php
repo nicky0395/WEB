@@ -4,7 +4,6 @@
 	$password = "";
 	$dbname = "instituto";
 
-	$nexpediente = $_POST["nExpediente"];
 	$nombre = $_POST["Nombre"];
 	$apellido = $_POST["Apellido"];
 	$FechaNacimiento = $_POST["FechaNacimiento"];
@@ -18,8 +17,8 @@
 	    die("Connection failed: " . $conn->connect_error);
 	} 
 
-	$sql = "INSERT INTO alumno (N_EXPEDIENTE, NOMBRE_ALUMNO, APELLIDO_ALUMNO, CLAVE_ALUMNO, FECHA_NACIMIENTO, FECHA_REGISTRO)
-	VALUES (".$nexpediente.",'".$nombre."','".$apellido."','".$Contrasena."','".$FechaNacimiento."','".$FechaResgistro."')";
+	$sql = "INSERT INTO alumno (NOMBRE_ALUMNO, APELLIDO_ALUMNO, CLAVE_ALUMNO, FECHA_NACIMIENTO, FECHA_REGISTRO)
+	VALUES ('".$nombre."','".$apellido."','".$Contrasena."','".$FechaNacimiento."','".$FechaResgistro."')";
 	
 	if ($conn->query($sql) === TRUE) {
 	    echo "alumno registrado correctamente";

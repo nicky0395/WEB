@@ -7,7 +7,7 @@ if (isset($_POST['loginE'])) {
         echo "
         <script>
             alert('INGRESO CORRECTO')
-            window.location='listaModulos.php';
+            window.location='listaModulos.php?nombre=$_REQUEST[nombre]';
         </script>";
     } else {
         die("<script>alert('Usuario o Contraseña incorrectos'); window.location='../php/servicioAlumno.php';</script>");
@@ -63,7 +63,6 @@ if (isset($_POST['loginE'])) {
                             LOGIN
                         </h1>
                     </div>
-
                     <form class="formularioLogin" action="servicioAlumno.php" method="POST">
                         USUARIO:
                         <input type="text" name="nombre">
@@ -74,7 +73,7 @@ if (isset($_POST['loginE'])) {
                         <br>
                         <input type="submit" value="LOGIN" name="loginE">
                     </form>
-                    <form class="formularioLogin" action="insercionAlumno.html" method="POST">
+                    <form class="formularioLogin" action="../html/insercionAlumno.html" method="POST">
                         <input type="submit" value="Registrarse">
                     </form>
                 </div>
