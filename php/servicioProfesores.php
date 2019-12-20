@@ -38,8 +38,8 @@
                         <li><a href="">SERVICIOS</a>
                             <ul class="submenu">
                                 <li><a href="">Profesores</a></li>
-                                <li><a href="servicioAlumno.html">Alumnos</a></li>
-                                <li><a href="servicioModulos.html">Módulos</a></li>
+                                <li><a href="servicioAlumno.php">Alumnos</a></li>
+                                <li><a href="servicioModulos.php">Módulos</a></li>
                             </ul>
                         </li>
                         <li><a href="contactos.html">CONTÁCTENOS</a></li>

@@ -1,8 +1,7 @@
 <?php    
             $conexion = mysqli_connect("localhost","root","","instituto") or
             die("Problemas con la conexion");
-
-			$query="insert into modulo(`NOMBRE_MODULO`, `DESCRIPCION`, `VISIBLE_M`) 
+			$query="insert into modulo('NOMBRE_MODULO', 'DESCRIPCION', 'VISIBLE_M') 
             values ('$_REQUEST[idModulo]','$_REQUEST[descripcion]','1')";
             mysqli_query($conexion,$query ) or
             die("Problemas en el insert" .mysqli_error($conexion));
