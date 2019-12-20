@@ -17,14 +17,15 @@
     <h1 class="h1_class">Ingrese los siguientes datos</h1>
     <form method="post" action="../php/insertarModulo.php" id="form_padd">
 
-        <input type="text" name="idModulo" placeholder="Ingrese Modulo" size="40" class="estiloInput">
+        <input type="text" name="idModulo" placeholder="Ingrese Modulo" size="40" class="estiloInput" required>
         <br /> <br />
-        <input type="text" name="descripcion" placeholder="Descripción" size="40" class="estiloInput">
+        <input type="text" name="descripcion" placeholder="Descripción" size="40" class="estiloInput" required>
         <br /> <br />
-        <input type="submit" name="boton" value="Insertar" size="40" class="estiloInput">
+        <input type="submit" name="boton" value="Insertar" size="40" class="estiloInput" required>
     </form>
     <br />
-    <a href="index1.html"> Regresar Menú Principal </a>
+    <a href="index1.html"> Regresar Menú Principal </a> <br>
+    <a href="../php/actualizarModulos.php"> Actualizar </a>
 
 </body>
 
